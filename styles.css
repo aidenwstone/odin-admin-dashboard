@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "nav header" min-content
+    "nav main" 1fr / 300px 1fr;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  background-color: #1992d4;
+  grid-area: nav;
+}
+
+main {
+  background-color: #e2e8ef;
+  grid-area: main;
+}
