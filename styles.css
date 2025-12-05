@@ -3,6 +3,17 @@
   margin: 0;
 }
 
+:root {
+  --primary-color: #1992d4;
+  --primary-color-hover: #157eb7;
+  --secondary-color: #f0b429;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #e2e8ef;
+  --primary-text-color: #000000;
+  --inverted-text-color: #ffffff;
+  --secondary-text-color: #636363;
+}
+
 body {
   margin: 0;
   height: 100vh;
@@ -13,6 +24,7 @@ body {
 }
 
 header {
+  background-color: var(--primary-background-color);
   grid-area: header;
 }
 
@@ -22,6 +34,6 @@ nav {
 }
 
 main {
-  background-color: #e2e8ef;
+  background-color: var(--secondary-background-color);
   grid-area: main;
 }
