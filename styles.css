@@ -25,6 +25,7 @@ body {
 }
 
 header {
+  z-index: 1;
   padding: 20px 40px;
   background-color: var(--primary-background-color);
   box-shadow: 0px 3px 3px 0px var(--shadow-color);
@@ -84,6 +85,7 @@ header {
 }
 
 nav {
+  z-index: 2;
   color: var(--inverted-text-color);
   background-color: var(--primary-color);
   grid-area: nav;
