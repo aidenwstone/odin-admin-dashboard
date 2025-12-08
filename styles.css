@@ -228,5 +228,39 @@ main {
 
   .trending {
     grid-area: trending;
+
+    .content {
+      grid-template-rows: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .topic {
+      text-decoration: none;
+      display: grid;
+      grid-template: 
+      "pfp username"
+      "pfp title" / min-content 1fr;
+
+      img {
+        grid-area: pfp;
+        height: 50px;
+      }
+
+      .user {
+        grid-area: username;
+        align-self: end;
+        color: var(--primary-text-color);
+      }
+
+      .title {
+        grid-area: title;
+        color: var(--secondary-text-color);
+      }
+
+      &:hover {
+        background-color: var(--secondary-background-color);
+        border-radius: 5px;
+      }
+    }
   }
 }
