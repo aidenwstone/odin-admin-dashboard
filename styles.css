@@ -190,6 +190,7 @@ main {
     "projects trending" / 1fr 300px;
   gap: 40px 20px;
   padding: 20px;
+  overflow: auto;
 
   .projects,
   .announcements,
